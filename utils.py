@@ -379,7 +379,7 @@ def humanbytes(size):
 
 
 
-####################  Tnlink  ####################
+####################  Shortlink  ####################
 
 async def get_shortlink(link):
     https = link.split(":")[0]
