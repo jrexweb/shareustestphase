@@ -386,16 +386,15 @@ async def get_shortlink(link):
     if "http" == https:
         https = "https"
         link = link.replace("http", https)
-    url = f'https://api.shareus.in/shortLink'
-    params = {'token': 'bv2WcmxzpKa86diNA6dAEEVbxxp1',
-              'format': 'json',
-              'link': link,
+    url = f'https://tnlink.in/api'
+    params = {'api': '35740dcc6c2a808be526806338ba29f5f759968a',
+              'url': link,
               }
 
     async with aiohttp.ClientSession() as session:
         async with session.get(url, params=params, raise_for_status=True, ssl=False) as response:
             data = await response.json()
             if data["status"] == "success":
-                return data['shortlink']
+                return data['shortenedUrl']
             else:
                 return f"Error: {data['message']}"
