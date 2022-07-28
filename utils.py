@@ -15,7 +15,7 @@ from bs4 import BeautifulSoup
 import requests
 import aiohttp
 
-logger = logging.getLogger(__name__)
+logger = logging.getLogger(name)
 logger.setLevel(logging.INFO)
 
 BTN_URL_REGEX = re.compile(
@@ -290,7 +290,7 @@ def split_quotes(text: str) -> List:
 
     # 1 to avoid starting quote, and counter is exclusive so avoids ending
     key = remove_escapes(text[1:counter].strip())
-    # index will be in range, or `else` would have been executed and returned
+    # index will be in range, or else would have been executed and returned
     rest = text[counter + 1:].strip()
     if not key:
         key = text[0] + text[0]
@@ -351,7 +351,6 @@ def parser(text, keyword):
         return note_data, buttons, alerts
     except:
         return note_data, buttons, None
-
 def remove_escapes(text: str) -> str:
     res = ""
     is_escaped = False
@@ -379,7 +378,7 @@ def humanbytes(size):
 
 
 
-####################  Shortlink  ####################
+####################  Dulink  ####################
 
 async def get_shortlink(link):
     https = link.split(":")[0]
@@ -403,6 +402,6 @@ async def get_shortlink(link):
                     logger.error(f"Error: {data['message']}")
                     return f'https://api.shareus.in/directLink?token={SHORTENER_API}&link={link}'
 
-     except Exception as e:
-         logger.error(e)
-         return f'https://api.shareus.in/directLink?token={SHORTENER_API}&link={link}'
+    except Exception as e:
+        logger.error(e)
+        return f'https://api.shareus.in/directLink?token={SHORTENER_API}&link={link}'
