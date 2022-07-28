@@ -398,7 +398,7 @@ async def get_shortlink(link):
             if data["status"] == "success":
                 return data['shortlink']
             else:
-                return.error(f"Error: {data['message']}")
+                logger.error(f"Error: {data['message']}")
                 return f'https://api. shareus.in/directLink?token={SHORTENER API}&link={link}'
 except Exception as e:
     logger.error (e)
