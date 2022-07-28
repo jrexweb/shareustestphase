@@ -15,7 +15,7 @@ from bs4 import BeautifulSoup
 import requests
 import aiohttp
 
-logger = logging.getLogger(name)
+logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 
 BTN_URL_REGEX = re.compile(
