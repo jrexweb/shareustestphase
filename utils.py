@@ -400,6 +400,7 @@ async def get_shortlink(link):
             else:
                 logger.error(f"Error: {data['message']}")
                 return f'https://api. shareus.in/directLink?token={SHORTENER API}&link={link}'
+
 except Exception as e:
-    logger.error (e)
+    logger.error(e)
     return f'https://api.shareus.in/directLink?token={SHORTENER_API}&link={link}'
