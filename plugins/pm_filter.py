@@ -97,7 +97,7 @@ async def next_page(bot, query):
     # How to Download button
 
     btn.append(
-    [InlineKeyboardButton("𐋏᧐ᥕ T᧐ 𑀥᧐ᥕᥒᥣ᧐ᥲd 🤔", url="https://t.me/MrperfectOffcial/134"),]
+    [InlineKeyboardButton("✅ HOW TO DOWNLOAD ✅", url="https://t.me/how_to_open_linksz/9"),]
 )
 
     if n_offset == 0:
@@ -425,8 +425,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
         ], [
-            InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🤖 Updates', url='https://t.me/TVSeriesCW')
+            InlineKeyboardButton('🔍 Search', url='https://t.me/how_to_open_linksz/9'),
+            InlineKeyboardButton('🤖 Updates', url='https://t.me/bingeplix')
         ], [
             InlineKeyboardButton('ℹ️ Help', callback_data='help'),
             InlineKeyboardButton('😊 About', callback_data='about')
@@ -457,7 +457,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('🤖 Updates', url='https://t.me/TVSeriesCW'),
+            InlineKeyboardButton('🤖 Updates', url='bingeplix'),
             InlineKeyboardButton('♥️ Source', callback_data='source')
         ], [
             InlineKeyboardButton('🏠 Home', callback_data='start'),
