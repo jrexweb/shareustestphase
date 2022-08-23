@@ -45,7 +45,7 @@ async def start(client, message):
             InlineKeyboardButton('➕ Add Me To Your Group ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
             InlineKeyboardButton('🔍 Search', url='https://t.me/how_to_open_linksz/9'),
-            InlineKeyboardButton('Main Channel⚡', url='bingeplix')
+            InlineKeyboardButton('Main Channel⚡', url='https://t.me/bingeplix')
             ],[
             InlineKeyboardButton(' OWNER 😬  ', url='https://t.me/inform_adminzbot')
         ]]
@@ -90,7 +90,7 @@ async def start(client, message):
             InlineKeyboardButton('➕ Add Me To Your Group ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
             InlineKeyboardButton('🔍 Search', url='https://t.me/how_to_open_linksz/9'),
-            InlineKeyboardButton('Main Channel⚡', url='bingeplix')
+            InlineKeyboardButton('Main Channel⚡', url='https://t.me/bingeplix')
             ],[
             InlineKeyboardButton(' OWNER 😬  ', url='https://t.me/inform_adminzbot')
         ]]
