@@ -428,6 +428,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('🔍 Search', url='https://t.me/how_to_open_linksz/9'),
             InlineKeyboardButton('🤖 Updates', url='https://t.me/bingeplix')
         ], [
+            
             InlineKeyboardButton('ℹ️ Help', callback_data='help'),
             InlineKeyboardButton('😊 About', callback_data='about')
         ]]
@@ -682,11 +683,17 @@ async def auto_filter(client, msg, spoll=False):
         ]
 
     btn.append(
-    [InlineKeyboardButton("𐋏᧐ᥕ T᧐ 𑀥᧐ᥕᥒᥣ᧐ᥲd 🤔", url="https://t.me/MrperfectOffcial/134"),]
+    [InlineKeyboardButton("✅ HOW TO DOWNLOAD ✅", url="https://t.me/how_to_open_linksz/10"),]
 )
 
     if offset != "":
         key = f"{message.chat.id}-{message.message_id}"
+        
+        
+        
+        
+        
+        
         BUTTONS[key] = search
         req = message.from_user.id if message.from_user else 0
         btn.append(
